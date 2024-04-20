@@ -1,0 +1,98 @@
+.container {
+    display: flex;
+}
+
+.left-side, .right-side {
+    flex: 1;
+    padding: 20px;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f0e0e;
+}
+
+.container1 {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #0f0e0e;
+    /* border-radius: 8px; */
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+}
+
+h1, h2 {
+    color: #0056b3;
+}
+
+.meal-selector {
+    margin-top: 20px;
+}
+
+.meal-option {
+    margin-bottom: 15px;
+    color: blue;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+}
+
+select {
+    padding: 5px;
+    width: 200px;
+}
+
+.total-calories {
+    margin-top: 20px;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f0e0e;
+}
+
+.container2 {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #0f0e0e;
+    /* border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+}
+
+h1 {
+    text-align: center;
+    color: blue;
+}
+
+.meal {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: blue;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: green;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: blue;
+}

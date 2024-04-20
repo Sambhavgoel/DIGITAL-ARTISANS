@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two-Part HTML Page with Flexbox</title>
+    <link rel="stylesheet" href="schedule.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <!-- Content for the left side -->
+            
+            <div class="container1">
+                <h1>Nutrition & Meal Planning</h1>
+                
+                <div class="meal-selector">
+                    <h2>Select Your Meals</h2>
+                    
+                    <div class="meal-option">
+                        <label for="breakfast">Breakfast:</label>
+                        <select id="breakfast" onchange="calculateCalories()">
+                            <option value="0">Select</option>
+                            <option value="300">Oatmeal (300 calories)</option>
+                            <option value="400">Smoothie (400 calories)</option>
+                            <option value="350">Avocado Toast (350 calories)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="meal-option">
+                        <label for="lunch">Lunch:</label>
+                        <select id="lunch" onchange="calculateCalories()">
+                            <option value="0">Select</option>
+                            <option value="500">Grilled Chicken Salad (500 calories)</option>
+                            <option value="450">Vegetable Stir Fry (450 calories)</option>
+                            <option value="600">Turkey Sandwich (600 calories)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="meal-option">
+                        <label for="dinner">Dinner:</label>
+                        <select id="dinner" onchange="calculateCalories()">
+                            <option value="0">Select</option>
+                            <option value="600">Salmon with Veggies (600 calories)</option>
+                            <option value="550">Pasta with Tomato Sauce (550 calories)</option>
+                            <option value="700">Steak with Potatoes (700 calories)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="total-calories">
+                        <h2>Total Calories: <span id="totalCalories">0</span></h2>
+                    </div>
+                </div>
+            </div>
+        
+            <script src="script.js"></script>
+        </body>
+        
+        </div>
+        <div class="right-side">
+            <!-- Content for the right side -->
+            
+            <div class="container2">
+                <h1>User Input Diet Chart</h1>
+        
+                <div class="meal">
+                    <h2>Breakfast</h2>
+                    <input type="text" id="breakfastInput" placeholder="Enter breakfast meal">
+                </div>
+        
+                <div class="meal">
+                    <h2>Mid-Morning Snack</h2>
+                    <input type="text" id="midMorningSnackInput" placeholder="Enter mid-morning snack">
+                </div>
+        
+                <div class="meal">
+                    <h2>Lunch</h2>
+                    <input type="text" id="lunchInput" placeholder="Enter lunch meal">
+                </div>
+        
+                <div class="meal">
+                    <h2>Afternoon Snack</h2>
+                    <input type="text" id="afternoonSnackInput" placeholder="Enter afternoon snack">
+                </div>
+        
+                <div class="meal">
+                    <h2>Dinner</h2>
+                    <input type="text" id="dinnerInput" placeholder="Enter dinner meal">
+                </div>
+        
+                <button onclick="displayMeals()">Display Meals</button>
+        
+                <div id="output"></div>
+            </div>
+        
+            <script src="schedule.js"></script>
+        </body>
+        
+        </div>
+    </div>
+</body>
+</html>
